@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-family: "ubuntu", sans-serif;
+}
+
+.lhs-container{
+    background-image: url('bg-sidebar-desktop.svg');
+    width: 20%;
+    height: 35rem;
+    border-radius: 8px;
+}
