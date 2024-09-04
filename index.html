@@ -38,8 +38,10 @@
         <div class="rhs-container">
         <form action="" class="form">
             <div class="form-one form-step">
+                <div class="text">
                 <h2>Personal info</h2>
                 <p>Please provide your name, email address and phone number</p>
+                </div>
                 <div>
                     <label> Name</label>
                     <input type="text" placeholder="e.g. Stephen king">
@@ -56,18 +58,153 @@
         </div>
         <button type="submit" class="next-btn"> Next Step</button>
         </form>
+    <!-- </div> -->
 
         <!-- step 2 start -->
+         <div class="step-2">
          <div class="step-2-container">
+            <div class="text">
             <h2>Select your plan</h2>
             <p>You have the option of monthly or yearly billing</p>
+         </div>
             <div class="plans-container">
-                <div class="arcade-card">
-                    
+                <div class="card">
+                    <img src="icon-arcade.svg" alt="arcade icon">
+                    <div class="price-tag"><h3>Arcade</h3></div>
+                    <p>$9/mo</p>
+                </div>
+                <div class="card">
+                    <img src="icon-advanced.svg" alt="advanced icon">
+                    <div class="price-tag"><h3>Advanced</h3></div>
+                    <p>$12/mo</p>
+                </div>
+                <div class="card">
+                    <img src="icon-pro.svg" alt="pro icon">
+                    <div class="price-tag"><h3>Pro</h3></div>
+                    <p>$15/mo</p>
                 </div>
             </div>
          </div>
-    
+
+         <div class="toggle">
+            <p>Monthly</p>
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            </label>
+            <p>Yearly</p>
+         </div>
+
+         <div class="btn">
+            <button class="back">Go Back</button>
+            <button class="next-btn">Next Step</button>
+         </div>
+        </div> 
+
+        <!-- Step 3  -->
+    <div class="step-3">    
+        <div class="text">
+            <h2>Pick add-ons</h2>
+            <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+    <div class="outline-container">
+        <div class="outline">
+            <div class="switch">
+            <label class="switch">
+                <input type="checkbox">
+            </label>
+            </div>
+            <div class="text">
+            <h3>Online service</h3>
+            <p>Access to multiplayer games</p>
+            </div>
+            <div class="currency">
+                <p>+$1/mo</p>
+            </div>
+        </div>
+
+        <div class="outline">
+            <div class="switch">
+            <label class="switch">
+                <input type="checkbox">
+            </label>
+            </div>
+            <div class="text">
+            <h3>Larger storage</h3>
+            <p>Extra 1TB of cloud save</p>
+            </div>
+            <div class="currency">
+                <p>+$2/mo</p>
+            </div>
+        </div>
+
+        <div class="outline">
+            <div class="switch">
+            <label class="switch">
+                <input type="checkbox">
+            </label>
+            </div>
+            <div class="text">
+            <h3>Customizable profile</h3>
+            <p>Custom theme on your profile</p>
+            </div>
+            <div class="currency">
+                <p>+$2/mo</p>
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="back">Go Back</button>
+        <button class="next-btn">Next Step</button>
+     </div> 
+    </div>
+
+    <!-- step 4 -->
+     <div class="step-4">
+        <div class="text">
+            <h2>Finishing up</h2>
+            <p>Double-check everything looks OK before confirming.</p>
+        </div>
+        <div class="card-4">
+            <div class="selected-plan">
+                <h3>Arcade(Monthly)</h3>
+                <p class="Change">Change</p>
+            </div>
+            <div class="amount">
+                <p>$9/mo</p>
+            </div>
+
+            <div class="service">
+                <p> Online service</p>
+                <p> +$1/mo</p>
+            </div>
+            <div class="service">
+                <p>Larger storage</p>
+                <p>+$12/mo</p>
+            </div>
+        </div>
+
+        <div class="total">
+            <p>Total(per month)</p>
+            <p>+$12/mo</p>
+        </div>
+
+        <div class="btn">
+            <button class="back">Go Back</button>
+            <button class="confirm">Confirm</button>
+         </div>
+        </div>
+
+    <!-- Step 5     -->
+     <div class="thankyou-box">
+        <img src="icon-thank-you.svg">
+        <div class="thankyou">
+            <h2>Thank you!</h2>
+            <p>Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com. </p>
+        </div>
+     </div>
     </div>
     <script src="script.js"></script>
 </body>
