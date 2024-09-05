@@ -9,9 +9,6 @@ body{
     background: rgb(237, 250, 250);
     
 }
-body p{
-    color: hsl(231, 11%, 63%);
-}
 
 .lhs-container{
     background-image: url('bg-sidebar-desktop.svg');
@@ -33,9 +30,64 @@ body p{
     flex-direction: row;
     margin-top: 2em;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     
 }
 .form-box .progress-bar{
+    position: relative;
     padding: 0 2em;
+    margin-top: 2.5em;
+
+}
+.lhs-container{
+    margin: 0.8em;
+}
+.progrss-steps{
+    display: flex;
+    flex-direction: column;
+}
+.progrss-steps li{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+.progrss-steps li > span{
+    position: relative;
+    width: 28px;
+    height: 28px;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-right: 1em;
+    border-radius: 50%;
+    border: 1px solid hsl(206, 94%, 87%);
+    color: hsl(231, 100%, 99%);
+    z-index: 1;
+    
+}
+.progrss-steps li.step-active > span{
+    color: hsl(213, 96%, 18%);
+    background-color: hsl(206, 94%, 87%);
+}
+.progrss-steps li p > span{
+    font-size: x-small;
+    color: hsl(232, 18%, 76%);
+    
+}
+.progrss-steps li p{
+    font-size: 12px;
+    font-weight: 550;
+    color: hsl(231, 100%, 99%);
+    
+}
+
+
+@media screen and (min-width: 768px){
+    .form-box .progress-bar{
+        flex: 1 0 35%;
+    min-width: 375;
+    }
+                
 }
