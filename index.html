@@ -42,17 +42,17 @@
                 <h2>Personal info</h2>
                 <p>Please provide your name, email address and phone number</p>
                 </div>
-                <div>
+                <div class="input-container">
                     <label> Name</label>
                     <input type="text" placeholder="e.g. Stephen king">
                 </div>
-                <div>
+                <div class="input-container">
                     <label>Email Address</label>
                     <input type="text" placeholder="e.g. stephenking@lorem.com">
                 </div>
-                <div>
+                <div class="input-container">
                     <label> Phone Number</label>
-                    <input type="number" placeholder="e.g. +234 914 57644">
+                    <input type="text" placeholder="e.g. +234 914 57644">
                 </div>
             </div>
             <button type="submit" class="next-btn"> Next Step</button>
@@ -68,7 +68,7 @@
             <p>You have the option of monthly or yearly billing</p>
          </div>
             <div class="plans-container">
-                <div class="card">
+                <div class="card-active">
                     <img src="icon-arcade.svg" alt="arcade icon">
                     <div class="price-tag"><h3>Arcade</h3></div>
                     <p>$9/mo</p>
@@ -108,7 +108,7 @@
             <p>Add-ons help enhance your gaming experience.</p>
         </div>
     <div class="outline-container">
-        <div class="outline">
+        <div class="outline-active">
             <div class="switch">
             <label class="switch">
                 <input type="checkbox">
@@ -168,10 +168,10 @@
         <div class="card-4">
             <div class="selected-plan">
                 <h3>Arcade(Monthly)</h3>
-                <p class="Change">Change</p>
+                <p class="amount">$9/mo</p>
             </div>
-            <div class="amount">
-                <p>$9/mo</p>
+            <div class="change">
+                <p>Change</p>
             </div>
 
             <div class="service">
@@ -186,7 +186,7 @@
 
         <div class="total">
             <p>Total(per month)</p>
-            <p>+$12/mo</p>
+            <p class="total-price">+$12/mo</p>
         </div>
 
         <div class="btn">

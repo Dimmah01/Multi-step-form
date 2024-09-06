@@ -22,9 +22,9 @@ body{
     padding: 0 2em;
 }
 .rhs-container{
-    /* background: aqua; */
-    padding: 0 6em;
+    padding: 0 5em;
     padding-top: 4em;
+    width: 100%;
 }
 .form-box{
     display: flex;
@@ -82,8 +82,201 @@ body{
     font-size: 13px;
     font-weight: 600;
     color: hsl(0, 0%, 89%);
+}
+
+.text h2{
+    color: hsl(213, 96%, 18%);
+    font-size: 28px;
+    font-weight: 800;
+    padding-bottom: 10px;
+} 
+.text p{
+    color: hsl(231, 11%, 63%);
+    font-size: 14px;
+    padding-bottom: 4em;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    color: hsl(213, 96%, 18%);
+    font-size: 13px;
+    font-weight: 550;
     
 }
+.input-container input{
+    height: 3em;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 6px;
+    padding-left: 2em;
+    margin-top: 0.5em;
+
+}
+ ::placeholder{
+    color: hsl(231, 11%, 63%);
+}
+
+.rhs-container .next-btn{
+    float: right;
+    background-color: hsl(213, 96%, 18%);
+    border: none;
+    border-radius: 6px;
+    padding: 1em 2.2em;
+    color: hsl(206, 100%, 95%);
+    cursor: pointer;
+    margin-top: 2em;
+}
+.text p{
+    padding-bottom: 2em;
+
+}
+
+/* step two styling */
+
+.step-2-container .plans-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.step-2-container .plans-container .card{
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 8px;
+    width: 9em;
+    height: 10em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.step-2-container .plans-container .card-active{
+    border: 1px solid hsl(243, 100%, 62%);
+    border-radius: 8px;
+    width: 9em;
+    height: 10em;
+    padding-left: 1em;
+    padding-top: 1em;
+    background-color: hsl(195, 100%, 98%);
+}
+
+.step-2-container .plans-container .card:hover{
+    border: 1.5px solid hsl(243, 100%, 62%);
+}
+
+.price-tag{
+    padding-top: 3.5em;
+}
+.price-tag h3{
+    font-size: 16px;
+    color: hsl(213, 96%, 18%);
+}
+.plans-container p{
+    font-size: 13px;
+    color: hsl(231, 11%, 63%);
+    padding-top: 5px;
+}
+
+.toggle{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    background-color: hsl(195, 100%, 98%);
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    border-radius: 5px;
+}
+
+.btn .back{
+    border: none;
+    color: hsl(231, 11%, 63%);
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    cursor: pointer;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+/* step 3 styling */
+
+.step-3 .outline-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2em;
+   
+
+}
+.step-3 .outline-container .switch {
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.step-3 .outline-container .currency{
+    margin-top: 1.1em;
+    margin-right: 1.2em;
+      
+}
+.step-3 .outline-container input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.step-3 .outline-container .text{
+    padding-left: 2em;
+}
+.outline-container .outline{
+    color: hsl(213, 96%, 18%);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding-top: 1em;
+   
+}
+.outline-container .outline-active{
+    color: hsl(213, 96%, 18%);
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    border: 1px solid hsl(243, 100%, 62%);
+    border-radius: 8px;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    background-color: hsl(195, 100%, 98%);
+}
+.outline:hover{
+    border: 1px solid hsl(243, 100%, 62%)
+}
+
+/* step 4 styling */
+
+.step-4 .card-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(195, 100%, 98%);
+    padding: 1.2em 1.2em;
+    border-radius: 8px;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service,
+.selected-plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    
+
 
 
 
@@ -122,8 +315,12 @@ body{
         /* margin: 0 2em; */
         background-color: #fff;
         border-radius: 10px;
-        margin: 0 1.2em;
+        margin: 0 0.5em;
         margin-top: -3.8em;
+        width: 80%;
+        padding-left: 1.5em;
+        padding-right: 1.5em; 
+        padding-top: 2em;      
         /* padding-top: 2em;  */
         /* position: absolute;  */
     }
