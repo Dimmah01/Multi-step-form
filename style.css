@@ -206,6 +206,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 1.2em;
+    
    
 
 }
@@ -215,8 +216,9 @@ body{
 }
 .step-3 .outline-container .currency{
     margin-top: 1.1em;
-    margin-right: 1.2em;
-      
+    margin-left: 5em;
+    
+        
 }
 .step-3 .outline-container input[type="checkbox"]{
     width: 20px;
@@ -236,6 +238,7 @@ body{
     border-radius: 8px;
     margin-bottom: 1em;
     padding-top: 1em;
+    
    
 }
 .outline-container .outline-active{
@@ -267,15 +270,88 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: hsl(231, 11%, 63%);
+    margin-top: 1.5em;
+    margin-left: 1em;
 }
 
-.service,
 .selected-plan{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1em;
+    color: hsl(213, 96%, 18%); 
+}
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    color: hsl(231, 11%, 63%);
+}
+.change{
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+}
+.change a{
+    color: hsl(231, 11%, 63%);
+}
+
+hr{
+    margin-top: 1.5em;
+    border: 1px solid hsl(228, 21%, 91%);
+}
+.total-price{
+    font-size: 20px;
+    font-weight: 800;
+    color: hsl(243, 100%, 62%);
+    
+}
+
+.btn .confirm{
+    float: right;
+    background-color: hsl(243, 100%, 62%);
+    border: none;
+    border-radius: 6px;
+    padding: 1em 2.2em;
+    color: hsl(206, 100%, 95%);
+    cursor: pointer;
+    margin-top: 2.5em;
+}
+
+
+/* Thank you styling */
+.thankyou-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+    
+}
+
+.thankyou-box img{
+    width: 85px;
+}
+.thankyou-box .thankyou {
+    text-align: center;
+    width: 70%;
+}
+.thankyou h2{
+    color: hsl(213, 96%, 18%);
+    font-weight: 800;
+    font-size: 32px;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+}
+.thankyou p{
+    color: hsl(231, 11%, 63%);
+    line-height: 1.4em;
+    
 }
     
+
+
 
 
 
